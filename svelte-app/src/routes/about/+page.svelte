@@ -18,10 +18,6 @@
 
   <style>
 
-    :global(body) {
-        background-color: #CF9168 ;
-    }
-
     .background {
         background-image: url('/images/Aboutmepage.png');
         background-size: cover;

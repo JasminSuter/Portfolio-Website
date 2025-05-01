@@ -18,10 +18,6 @@
 
   <style>
 
-    :global(body) {
-        background-color: #CF9168 ;
-    }
-
     .background {
         background-image: url('/images/Apricat.png');
         background-size: cover;
