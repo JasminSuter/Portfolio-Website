@@ -44,7 +44,10 @@
         <div class="container2">  
 
             <div class="text">
-                <p>I had a few designs for the mountain giant as I was not happy with my initial design. </p>
+                <p>I had a few designs for the mountain giant as I was not happy with my initial design. I wanted it to look like part of the scenery
+                    so I thought about making it look like the top of a mountain with a bit of snow as their hair, but I didn't like that initial design
+                    so I made it look more rock like instead. 
+                </p>
             </div>
 
             <div class="image">
@@ -69,6 +72,8 @@
         </div>
 
     </div>
+
+    <hr class="line">
 
     <div class = "project">
 
@@ -123,16 +128,19 @@
     h1 {
         font-family: 'Handwritten';
         font-size: 50px;
+        margin-left: 1%;
     }
 
     h2 {
         font-family: 'Handwritten';
         font-size: 40px;
+        margin-left: 2%;
     }
 
     p {
         font-family: 'Handwritten';
         font-size: 20px;
+        margin-left: 5%;
     }
 
     .container1 {
@@ -164,6 +172,12 @@
         height: auto;
         margin: 5%;
         margin-bottom: -5%;
+    }
+
+    .line{
+        color: #1b130e;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
   </style>
