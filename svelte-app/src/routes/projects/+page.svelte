@@ -17,7 +17,7 @@
 </div>
 
 <body>
-    <div class = "project">
+    <div class = "project" id="project1">
 
         <h1>First Year Game Project</h1>
 
@@ -75,7 +75,7 @@
 
     <hr class="line">
 
-    <div class = "project">
+    <div class = "project" id="project2">
 
         <h1>Second Year Browser Game Project</h1>
 
@@ -88,7 +88,7 @@
 
         <div class="container2">  
             <div class="image">
-                <img src="/uploads/project2/P2_File.png" alt="project witch sketch" class="art sketch">
+                <img src="/uploads/project2/P2_File.png" alt="project file" class="art sketch">
             </div>
         
             <div class="text">
@@ -104,15 +104,35 @@
             </div>
 
             <div class="image">
-                <img src="/uploads/project2/P2_Apps.png" alt="project giant sketch" class="assets objects">
+                <img src="/uploads/project2/P2_Apps.png" alt="project apps" class="assets objects">
             </div>
         </div>
 
                 <p>I also created a mascot to act as a tutorial instructor. It is based on a personified planet mars wearing an astronauts helmet. </p>
-                <img src="/uploads/project2/P2_Mascott.png" alt="project giant sketch" class="assets witch">
+                <img src="/uploads/project2/P2_Mascott.png" alt="project mascott sprite sheet" class="assets witch">
 
     </div>
+
+    
 </body>
+
+    <!-- Buttons at the top link to the different projects -->
+    <aside class="navigation">
+        <ol class="navigation-list">
+          <li class="navigation-item">
+            <a href="#project1"
+              class="navigation-button">Project 1</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#project2"
+              class="navigation-button">Project 2</a>
+          </li>
+        </ol>
+    </aside>
+
+    <div class="back">
+        <a href="/"><img src="/images/ArrowBack.png" alt="Back button" class="arrow"></a>
+    </div>
 
   <style>
 
@@ -127,8 +147,8 @@
         background-color: #e0a076;
         margin: 2%;
         padding: 2%;
+        border-radius: 25px;
     }
-
     h1 {
         font-family: 'Handwritten';
         font-size: 50px;
@@ -179,13 +199,58 @@
     }
 
     .line{
-    margin-left: 5%;
-    margin-right: 5%;
-    content: "";
-    width: 90%;
-    height: 3px;
-    background: linear-gradient(to right, transparent, #53321d, transparent);
-    border: none;
+        margin-left: 5%;
+        margin-right: 5%;
+        content: "";
+        width: 90%;
+        height: 3px;
+        background: linear-gradient(to right, transparent, #53321d, transparent);
+        border: none;
     }
+
+    /* Positions the navigation control buttons at the top of the page */ 
+  .navigation {
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin-top: -30px;
+  }
+  
+  /* formats the navigation buttons in a horizontal line instead of vertical */ 
+  .navigation-list,
+  .navigation-item {
+        display: inline-block;
+  }
+  
+  /* styling for navigation buttons at the bottom*/
+  .navigation-button {
+        display: inline-block;
+        border-radius: 0px 0px 20px 20px;
+        color: #271910;
+        font-family: 'Handwritten';
+        width: 8rem;
+        height: 2rem;
+        background-color: #d49d7b;
+        background-clip: content-box;
+        border: 0.25rem solid  #271910;
+        font-size: 25px;
+        transition: transform 0.1s;
+        margin: 10px;
+        text-decoration: none
+  }
+
+  .back {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+  }
+  
+  .arrow {
+        width: 7rem;
+        height: 7rem;
+  }
+
 
   </style>

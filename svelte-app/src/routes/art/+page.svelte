@@ -120,6 +120,10 @@
       </aside>
     </section>
   </div>
+
+  <div class="back">
+    <a href="/"><img src="/images/ArrowBack.png" alt="Back button" class="arrow"></a>
+  </div>
    
 </body>
 
@@ -308,5 +312,18 @@
   .carousel::after {
     background-image: url('/images/ArrowRight.png');
   }
+
+  
+  .back {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .arrow {
+    width: 7rem;
+    height: 7rem;
+  }
+
   
   </style>

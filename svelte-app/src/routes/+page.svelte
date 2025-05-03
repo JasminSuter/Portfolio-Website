@@ -33,7 +33,8 @@
       projectsButton.style.top = `${offsetTopProjects}px`;
       projectsButton.style.right = `${offsetRightProjects}px`;
     }
-  
+
+
     onMount(() => {
       positionButton();
       window.addEventListener('resize', positionButton);
@@ -52,7 +53,7 @@
 
 <!-- handles all images on the page except background image (Commissions, aisle, art, animation, projects)-->
 <!-- bind:this to position images in relation to each other, class to style images-->  
- <div class="image-layers"> 
+<div class="image-layers"> 
 
     <a href="/about"><img src="/images/HP_MeFrame2.png" alt="About me button" class="layer aboutme"></a>
 
@@ -63,9 +64,11 @@
             <a href="/projects"><img bind:this={projectsButton} src="/images/HP_Projects.png" alt="projects button" class="layer projects"></a>
         </div>
 
-        <a href="/commissions"><img src="/images/HP_Commission2.png" alt="Commissions button" class="layer commission"></a>
+    <a href="/commissions"><img src="/images/HP_Commission2.png" alt="Commissions button" class="layer commission"></a>
         
-    </div>
+</div>
+
+
 
   <style>
 

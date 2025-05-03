@@ -19,33 +19,36 @@
 <body>
   <div class = "aboutme">
 
-
-
-      <div class="container">  
-          <div class="image">
-              <img src="/images/About_Me.png" alt="selfportrait" class="portrait">
-          </div>
+    <div class="container">  
       
-          <div class="text">
-            <hr class="line">
-            <h1>About me</h1>
-              <p>Hello I am Jasmin. I am an artist from Switzerland but I currently live and study in Ireland. I am a freelance artist doing
-                character designs, animations and video games!
-              </p>
-              <p>I don't really know what to write here. I chose orange for the background because of my little mascott, the Apricat! 
-              </p>
-              <p>I like cats, cakes and tabletop roleplaying games and I also craft my own earrings and charms from clay.
-              </p>
-              <hr class="line">
+      <div class="image">
+        <img src="/images/About_Me.png" alt="selfportrait" class="portrait">
+      </div>
+      
+      <div class="text">
+        <hr class="line">
+        <h1>About me</h1>
+          
+        <div class="logo">
+          <img src="/images/Apricat_noback.png" alt="project witch sketch" class="apricat">
+        </div>
 
-          </div>
+        <p>Hello I am Jasmin. I am an artist from Switzerland but I currently live and study in Ireland. I am a freelance artist doing
+          character designs, animations and video games!</p>
+        <p>I don't really know what to write here. I chose orange for the background because of my little mascott, the Apricat! </p>
+        <p>I like cats, cakes and tabletop roleplaying games and I also craft my own earrings and charms from clay.</p>
+          
+
+        <hr class="line">
       </div>
 
-    <div class="logo">
-      <img src="/images/Apricat_noback.png" alt="project witch sketch" class="apricat">
     </div>
-      
+
   </div>
+
+  <div class="back">
+    <a href="/"><img src="/images/ArrowBack.png" alt="Back button" class="arrow"></a>
+</div>
 
 </body>
 
@@ -55,10 +58,23 @@
     background-color: #CF9168 ;
   }
 
-
   .aboutme{
+    position: absolute;
     font-size: 100px;
     font-family: 'Handwritten-Regular', sans-serif;
+    color: #53321d;
+    background-color: #e0a076;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 25px;
+  }
+  
+  .text{
+    font-family: 'Handwritten';
+    z-index: 2;
+    background-color: #cf916886;
+    border-radius: 25px;
+    padding: 2%;
   }
 
   h1 {
@@ -70,14 +86,6 @@
     font-size: 20px;
     margin-left: 5%;
   }
-
-  .text{
-    font-family: 'Handwritten';
-    z-index: 2;
-    background-color: #cf916886;
-    color: #53321d;
-  }
-
 
   .container {
     display: grid;
@@ -95,15 +103,9 @@
     margin-left: 5%;
   }
 
-  .logo{
-    position: absolute;
-    z-index: 1;
-    bottom: 50px;
-    right: 20px;
-  }
-
   .apricat{
-    height: 300px;
+    width: 300px;
+    float: right;
   }
 
   .line{
@@ -115,9 +117,17 @@
     
   }
 
-
-
-
+  .back {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+  }
+  
+  .arrow {
+    width: 7rem;
+    height: 7rem;
+  }
 
 
 </style>
