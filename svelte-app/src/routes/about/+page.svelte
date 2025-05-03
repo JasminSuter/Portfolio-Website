@@ -16,16 +16,108 @@
 
 </div>
 
-  <style>
-
-    .background {
-        background-image: url('/images/Aboutmepage.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;  /* Image always uses the full height of the window and cuts off length wise */ 
-        margin: 0;
-
-    }
+<body>
+  <div class = "aboutme">
 
 
-  </style>
+
+      <div class="container">  
+          <div class="image">
+              <img src="/images/About_Me.png" alt="selfportrait" class="portrait">
+          </div>
+      
+          <div class="text">
+            <hr class="line">
+            <h1>About me</h1>
+              <p>Hello I am Jasmin. I am an artist from Switzerland but I currently live and study in Ireland. I am a freelance artist doing
+                character designs, animations and video games!
+              </p>
+              <p>I don't really know what to write here. I chose orange for the background because of my little mascott, the Apricat! 
+              </p>
+              <p>I like cats, cakes and tabletop roleplaying games and I also craft my own earrings and charms from clay.
+              </p>
+              <hr class="line">
+
+          </div>
+      </div>
+
+    <div class="logo">
+      <img src="/images/Apricat_noback.png" alt="project witch sketch" class="apricat">
+    </div>
+      
+  </div>
+
+</body>
+
+<style>
+
+  :global(body) {
+    background-color: #CF9168 ;
+  }
+
+
+  .aboutme{
+    font-size: 100px;
+    font-family: 'Handwritten-Regular', sans-serif;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-left: 1%;
+  }
+
+  p {
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+  .text{
+    font-family: 'Handwritten';
+    z-index: 2;
+    background-color: #cf916886;
+    color: #53321d;
+  }
+
+
+  .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+    margin: 10px;
+
+  }
+
+  .portrait{
+    max-height: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .logo{
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    right: 20px;
+  }
+
+  .apricat{
+    height: 300px;
+  }
+
+  .line{
+    content: "";
+    width: 90%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #53321d, transparent);
+    border: none;
+    
+  }
+
+
+
+
+
+
+</style>

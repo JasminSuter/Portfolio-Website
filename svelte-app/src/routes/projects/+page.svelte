@@ -123,6 +123,10 @@
     .project{
         font-size: 100px;
         font-family: 'Handwritten-Regular', sans-serif;
+        color: #53321d;
+        background-color: #e0a076;
+        margin: 2%;
+        padding: 2%;
     }
 
     h1 {
@@ -175,9 +179,13 @@
     }
 
     .line{
-        color: #1b130e;
-        margin-left: 5%;
-        margin-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    content: "";
+    width: 90%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #53321d, transparent);
+    border: none;
     }
 
   </style>

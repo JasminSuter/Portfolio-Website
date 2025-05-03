@@ -138,6 +138,7 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   margin-top: 10%;
+  background-position: center bottom;
 }
 
 .carousel-container {

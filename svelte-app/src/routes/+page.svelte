@@ -15,13 +15,13 @@
       const aisleRect = aisle.getBoundingClientRect(); // Calculate the borders of the aisle image
   
       const offsetTopArt = aisleRect.height * 0.194; // Calculate vertical offset of Art button relative to the aisle image
-      const offsetRightArt = aisleRect.width * 0.084; // Calculate horizontal offset of Art button relative to the aisle image
+      const offsetRightArt = aisleRect.width * 0.22; // Calculate horizontal offset of Art button relative to the aisle image
 
-      const offsetTopAnimation = aisleRect.height * 0.397; // Calculate vertical offset of Animation button relative to the aisle image
-      const offsetRightAnimation = aisleRect.width * 0.06; // Calculate horizontal offset of Animation button relative to the aisle image
+      const offsetTopAnimation = aisleRect.height * 0.396; // Calculate vertical offset of Animation button relative to the aisle image
+      const offsetRightAnimation = aisleRect.width * 0.16; // Calculate horizontal offset of Animation button relative to the aisle image
 
       const offsetTopProjects = aisleRect.height * 0.58; // Calculate vertical offset of Projects button relative to the aisle image
-      const offsetRightProjects = aisleRect.width * 0.06; // Calculate horizontal offset of Projects button relative to the aisle image
+      const offsetRightProjects = aisleRect.width * 0.16; // Calculate horizontal offset of Projects button relative to the aisle image
   
       // apply distance in pixels to each button image
       artButton.style.top = `${offsetTopArt}px`;
@@ -54,8 +54,10 @@
 <!-- bind:this to position images in relation to each other, class to style images-->  
  <div class="image-layers"> 
 
+    <a href="/about"><img src="/images/HP_MeFrame2.png" alt="About me button" class="layer aboutme"></a>
+
         <div class="aisle-wrapper"> 
-            <img bind:this={aisle} src="/images/HP_Aisle2.png" alt="Aisle" class="layer aisle">
+            <img bind:this={aisle} src="/images/HP_Aisle.png" alt="Aisle" class="layer aisle">
             <a href="/art"><img bind:this={artButton} src="/images/HP_Art.png" alt="art button" class="layer art"></a>
             <a href="/animations"><img bind:this={animationButton} src="/images/HP_Animation.png" alt="animation button" class="layer animation"></a>
             <a href="/projects"><img bind:this={projectsButton} src="/images/HP_Projects.png" alt="projects button" class="layer projects"></a>
@@ -72,7 +74,7 @@
     }
 
     .background {
-        background-image: url('/images/HP_Background2.png');
+        background-image: url('/images/HP_Background.png');
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;  /* Image always uses the full height of the window and cuts off length wise */ 
@@ -117,12 +119,19 @@
         height: 21.8%;
     }
 
-        /* affects the comissions image/button */
-        .commission {
+    /* affects the comissions image/button */
+    .commission {
         left: 15%;
         z-index: 5; /* To make images stackable */ 
         height: 20%;
         min-height: 100px;
+    }
+
+    /* affects the comissions image/button */
+    .aboutme {
+        z-index: 2; /* To make images stackable */ 
+        height: 43.2%;
+        min-height: 120px;
     }
     
     /* 

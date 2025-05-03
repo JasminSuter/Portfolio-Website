@@ -137,7 +137,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 0;
-    margin-top: 10%;
+    margin-top: 5%;
   }
   
   .carousel-container {
@@ -268,8 +268,8 @@
     position: absolute;
     top: 0;
     margin-top: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
     transform: translateY(-50%);
     border-radius: 50%;
     font-size: 0;
@@ -279,13 +279,13 @@
   /* positions left arrow button slightly outside the container */ 
   .carousel::before,
   .carousel__prev {
-    left: -3rem;
+    left: -5rem;
   }
   
   /* positions right arrow button slightly outside the container */
   .carousel::after,
   .carousel__next {
-    right: -3rem;
+    right: -5rem;
   }
   
   /* styles the arrow buttons */
@@ -293,7 +293,7 @@
   .carousel::after {
     content: '';
     z-index: 1;
-    background-size: 5rem;
+    background-size: 7rem;
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
