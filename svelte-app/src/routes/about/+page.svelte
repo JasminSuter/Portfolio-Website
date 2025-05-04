@@ -37,6 +37,8 @@
           character designs, animations and video games!</p>
         <p>I don't really know what to write here. I chose orange for the background because of my little mascott, the Apricat! </p>
         <p>I like cats, cakes and tabletop roleplaying games and I also craft my own earrings and charms from clay.</p>
+
+        <p>Please contact me for any inquiries at thecatfreyja@gmail.com or on instagram at apricat.jam!</p>
           
 
         <hr class="line">

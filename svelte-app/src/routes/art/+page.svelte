@@ -185,11 +185,11 @@
   
   /* Carousel container */ 
   .carousel {
-  aspect-ratio: 1 / 1; /* Maintains square aspect ratio */
-  filter: drop-shadow(0 0 10px rgba(31, 19, 14, 0.2));
-  max-width: 60%;
-  width: 100%;
-  max-height: 90%;
+    aspect-ratio: 1 / 1; /* Maintains square aspect ratio */
+    filter: drop-shadow(0 0 10px rgba(31, 19, 14, 0.2));
+    max-width: 60%;
+    width: 100%;
+    max-height: 90%;
   }
   
   /* Carousel content */ 
