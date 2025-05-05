@@ -1,0 +1,14 @@
+import { h as head, c as pop, p as push, d as stringify } from "../../../chunks/index.js";
+import { b as base } from "../../../chunks/paths.js";
+import { a as attr } from "../../../chunks/attributes.js";
+function _page($$payload, $$props) {
+  push();
+  head($$payload, ($$payload2) => {
+    $$payload2.title = `<title>Animation</title>`;
+  });
+  $$payload.out += `<body class="svelte-1fum320"><div class="carousel-container svelte-1fum320"><section class="carousel svelte-1fum320"><ol class="carousel__viewport svelte-1fum320"><li id="carousel__slide1" tabindex="-1" class="carousel__slide svelte-1fum320"><div class="slide-content svelte-1fum320"><img${attr("src", `${stringify(base)}/uploads/animation/Walking_Animation.gif`)} alt="Artwork 1" class="svelte-1fum320"></div> <div class="carousel__snapper svelte-1fum320"><a href="#carousel__slide3" class="carousel__prev svelte-1fum320">Go to last slide</a> <a href="#carousel__slide2" class="carousel__next svelte-1fum320">Go to next slide</a></div></li> <li id="carousel__slide2" tabindex="-1" class="carousel__slide svelte-1fum320"><div class="slide-content svelte-1fum320"><img${attr("src", `${stringify(base)}/uploads/animation/Ball_Animation.gif`)} alt="Artwork 2" class="svelte-1fum320"></div> <div class="carousel__snapper svelte-1fum320"><a href="#carousel__slide1" class="carousel__prev svelte-1fum320">Go to previous slide</a> <a href="#carousel__slide3" class="carousel__next svelte-1fum320">Go to next slide</a></div></li> <li id="carousel__slide3" tabindex="-1" class="carousel__slide svelte-1fum320"><div class="slide-content svelte-1fum320"><img${attr("src", `${stringify(base)}/uploads/animation/Spiral_Animation.gif`)} alt="Artwork 3" class="svelte-1fum320"></div> <div class="carousel__snapper svelte-1fum320"><a href="#carousel__slide2" class="carousel__prev svelte-1fum320">Go to previous slide</a> <a href="#carousel__slide1" class="carousel__next svelte-1fum320">Go to next slide</a></div></li></ol> <aside class="carousel__navigation svelte-1fum320"><ol class="carousel__navigation-list svelte-1fum320"><li class="carousel__navigation-item svelte-1fum320"><a href="#carousel__slide1" class="carousel__navigation-button svelte-1fum320">Go to slide 1</a></li> <li class="carousel__navigation-item svelte-1fum320"><a href="#carousel__slide2" class="carousel__navigation-button svelte-1fum320">Go to slide 2</a></li> <li class="carousel__navigation-item svelte-1fum320"><a href="#carousel__slide3" class="carousel__navigation-button svelte-1fum320">Go to slide 3</a></li></ol></aside></section></div></body> <div class="back svelte-1fum320"><a${attr("href", `${stringify(base)}/`)} class="svelte-1fum320"><img${attr("src", `${stringify(base)}/images/ArrowBack.png`)} alt="Back button" class="arrow svelte-1fum320"></a></div>`;
+  pop();
+}
+export {
+  _page as default
+};
